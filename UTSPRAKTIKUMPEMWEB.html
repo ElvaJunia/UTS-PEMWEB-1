@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>UTS Pemrorograman Web 1</title> 
+    <style>
+        button{
+        padding: 7px 10px;
+        margin: 8px;
+        color: black;
+      }
+      .btn-blue{
+        background-color: cornflowerblue;
+      }
+      .btn-red{
+        background-color: crimson;
+      }
+      input, select, textarea{
+        border-radius: 1px;
+        border: 2px solid black;
+      }
+      input,select{
+        height: 25px;
+      }
+      td{
+        padding: 2px;
+      }
+      body{
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>  
+</head>
+<body>
+    <fieldset>
+      <legend>Booking Periksa Kesehatan Gigi</legend>
+
+      <table>
+    <tr>
+            <td>Nama Pasien :</td>
+            <td>
+                <input type="text" name="namapasien">
+            </td>
+    </tr>
+
+
+    <tr>
+            <td>
+                <label for="pilih dokter">Pilih Dokter</label>
+            </td>
+            <td>
+             <select name="pilih dokter" id="pilih dokter">
+               <option value="">Drg. Amalia</option>
+               <option value="">Drg. Yusuf</option>   
+               <option value="">Drg. Asiyah</option>
+               <option value="">Drg. Arsyila</option>        
+            </select>
+            </td>
+    </tr>
+
+
+    <tr>
+            <td>
+                <label for="pilih layanan">Pilih Layanan </label>
+            </td>
+            <td>
+            <select name="pilih layanan" id="pilih layanan">
+                <option value="">Perawatan Gigi Anak</option>
+                <option value="">Perawatan Kuku</option>
+               <option value="">Perawatan Wajah</option>
+               <option value="">Perawatan Tubuh</option>         
+            </select>
+            </td>
+    </tr>
+
+
+    <tr>
+        <td>Keluhan :</td>
+             <td>
+              <textarea name="Keluhan" id="address" cols="45" rows="2"></textarea>
+             </td>
+    </tr>
+          
+          
+    <tr>
+       <td>Pembayaran </td>
+       <td>
+    <input type="checkbox" name="pembayaran[]" value="Cash"> Cash
+    <input type="checkbox" name="pembayaran[]" value="Transfer"> Transfer
+    <input type="checkbox" name="toppings[]" value="eWallet"> eWallet
+      </td>
+    </tr>
+     
+     
+    <tr>
+      <td>
+        <label for="tanggalperiksa">Tanggal Periksa</label>
+      </td>
+      <td>
+        <input type="date" name="tanggalperiksa" id="tanggalperiksa">
+      </td>
+    </tr>
+    
+    
+    <tr>
+       <td>Umur </td>
+            <td>
+                <input type="text" name="umur">
+            </td>
+    </tr> 
+        
+        
+    <tr>
+      <td>
+        <label for="telepon">Telepon/HP</label>
+      </td>
+      <td>
+        <input type="number" name="telepon" id="telepon">
+      </td>
+     </tr>
+    
+    
+    <tr>
+        <td>Email:</td>
+        <td>
+          <input type="email" name="email">
+        </td>
+    </tr>
+      
+      
+      <tr>
+       <td></td>
+        <td>
+         <button type="sumbit" class="btn-blue">Simpan</button>
+          <button type="reset" class="btn-red">Reset</button>
+        </td>
+      </tr>
+      </table>
+    </fieldset>
+</body>
+</html>
